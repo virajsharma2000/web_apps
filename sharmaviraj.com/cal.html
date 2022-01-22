@@ -1,0 +1,23 @@
+
+<!-- saved from url=(0036)https://www.sharmaviraj.com/cal.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>calculator without keypad</title>
+</head>
+<body>
+<h1>calculator without keypad</h1>
+<input id="demo">
+<button onclick="equals()">=</button>
+<button onclick="c()">C</button>
+<script>
+function equals() {
+var x = document.getElementById("demo").value;
+var y = eval(x)
+document.getElementById("demo").value = y
+}
+function c() {
+document.getElementById("demo").value = ''
+}
+</script>
+
+
+</body></html>
