@@ -1,42 +1,19 @@
 <html>
-<head>
-<link rel = 'shortcut icon' href = 'vicon.png'></link>
-<title>sharmaviraj.com tells about viraj sharma</title>
-</head>
-<body>
-<div style = "background-color:green;">
-<h1 style = "color:white; padding:80px; text-align:center;">hello I am viraj sharma<br></br> don't access on phone because it is not responsive page</h1></h1>
-</div>
-<div style = "text-align:center; background-color:lightgray; padding:20px;">
-<h1>my photo</h1>
-<img src = "viraj.png" width = 200px; height = 200px;></img>
-<h1>my profile links</h1>
-<h1>my github link and my youtube channel and email address</h1>
-<a href = "https://www.github.com/virajsharma2000">https://www.github.com/virajsharma2000</a><br></br>
-<a href = "https://www.youtube.com/user/mashmashmashable">https://www.youtube.com/user/mashmashmashable</a><br></br>
-<p>kaushik.kalpana@gmail.com</p>
-<h1>my age is 10</h1>
-<h1>my house address is 77 mausam vihar delhi 51</h1>
-</div>
-<div style = "text-align:center;">
-    <h2><a href="mom.html">Mom's kisses - Mom's Day Special - 2022</a></h2><br></br>
     
-<h1>my file links</h1>
-<a href = "https://www.sharmaviraj.com/dateandtime.html">https://www.sharmaviraj.com/dateandtime.html</a><br></br>
-<a href = "https://www.sharmaviraj.com/cal.html">https://www.sharmaviraj.com/cal.html</a><br></br>
-<a download href = "telepathybook.pdf">my telepathy book</a><br></br>
-<a href="monkey.pdf">my poem - Monkey Man</a><br></br>
-<a href = "howtoblockwhatsappcontact.html">how to block whatsapp contact</a><br></br>
-<a href = 'virajsharma.pdf'>my avishkaar coding classes certificate</a><br></br>
-<a href = 'mybestpythoncode.html'>my best python code</a><br></br>
-<a href = 'about my school.html'>about my school</a><br></br>
-<a href = 'phenylexperiment.html'>my phenyl experiment</a><br></br>
-<a href = 'aboutmyprogramminglanguage.html'>about my programming language</a><br></br>
-<a href = 'twiliopage.html'>my twilio page</a>
-<a href = 'dart.html'>my using new programming language called dart</a><br></br>
-<a href = 'aboutmydrink.html'>about my drink</a><br></br>
-<a href = 'Rain and knee pain.pdf'>my second poem rain and knee pain</a>
-<a href = 'goodnews!!.html'>my good news!!!!</a><br></br>
-</div>
-</body>
+    <body>
+        <h1>Flask & Twilio Video Conference</h1>
+        <form>
+            <label for="username">Name: </label>
+            <input type="text" name=”username” id="username">
+            <button id="join_leave">Join call</button>
+        </form>
+        <p id="count"></p>
+        <div id="container" class="container">
+            <div id="local" class="participant"><div></div><div>Me</div></div>
+            <!-- more participants will be added dynamically here -->
+        </div>
+
+        <script src="//media.twiliocdn.com/sdk/js/video/releases/2.3.0/twilio-video.min.js"></script>
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </body>
 </html>
